@@ -3,7 +3,7 @@
 It detects anomalous behaviour in a system by considering behavioral changes of the interdependencies across different modules of the system.
 
 ___________________________________________________________________________________________________
-Directory details
+## Directory details
 1) dataset : this directory contains two folders having sample/toy training and testing dataset from NetApp.
   - description: Whenever a user/customer reported an bug/anomaly, we call it a new 'case'. For that case we crawl the customers system and collect the logs of last D number of days(D=128), i.e. 114 days for the case file date and 14 after the case file date. From each days log we extract features like Event count, Event Ratio, mean-inter time etc. (see SEC-III-C)
   - toy_train : have 70 cases and 128 days per case in csv format.
@@ -11,7 +11,7 @@ Directory details
 2) MDAP_processed : this directory contains Weight matrix learnt after training on toy_train dataset.
 3) baselines : this directory contains two of our baselines (ADELE and Neural Network based).
 ___________________________________________________________________________________________________
-Instructions to run the code.
+## Instructions to run the code.
 
 ** Notebook has outputs included from testing phase for quick analysis. **
 1) MDAP.ipynb : main file containing MDAP code.
@@ -29,7 +29,7 @@ Instructions to run the code.
         - Ideal results would be day index < 100 are predicted as 0 and index > 100 are predicted as 2.
         
 ___________________________________________________________________________________________________
-BASELINES
+## BASELINES
 1) ADELE
   - Just run the python file adele_net_app.py with the following command.
     - "python adele_net_app.py".
