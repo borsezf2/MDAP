@@ -5,7 +5,7 @@ It detects anomalous behaviour in a system by considering behavioral changes of 
 ___________________________________________________________________________________________________
 ## Directory details
 1) dataset : this directory contains two folders having sample/toy training and testing dataset from NetApp.
-  - description: Whenever a user/customer reported an bug/anomaly, we call it a new 'case'. For that case we crawl the customers system and collect the logs of last D number of days(D=128), i.e. 114 days for the case file date and 14 after the case file date. From each days log we extract features like Event count, Event Ratio, mean-inter time etc. (see SEC-III-C)
+  - description: Whenever a user/customer reported an bug/anomaly, we call it a new 'case'. For that case we crawl the customers system and collect the logs of last D number of days(D=128), i.e. 114 days befor the case file date and 14 after the case file date. From each days log we extract features like Event count, Event Ratio, mean-inter time etc. (see SEC-III-C)
   - toy_train : have 70 cases and 128 days per case in csv format.
   - test_train : have 21 random cases for testing.
 2) MDAP_processed : this directory contains Weight matrix learnt after training on toy_train dataset.
