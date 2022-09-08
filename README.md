@@ -36,4 +36,4 @@ BASELINES
     - other directory present here are requirement of adele framework
   - It'll print the average accuracy.
 2) Neural Network base
-  - WIP (will be updated soon)
+  - We have included miltiple implementation of ANN in the notebook with thier respective outputs.
